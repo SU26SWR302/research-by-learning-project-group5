@@ -7,7 +7,7 @@ TourMate là nền tảng du lịch thông minh kết hợp trải nghiệm ảo
 - Lê Đức Sự
 - Lê Viết Mạnh
 - Phạm Thị Vân Thanh
-- Trần Thủy Nguyên
+- Hoàng Thủy Nguyên
 - Huỳnh Tấn Vinh
 
 ## Jira Link
