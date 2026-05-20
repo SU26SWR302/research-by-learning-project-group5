@@ -34,7 +34,7 @@ This project focuses on Requirements-Based Learning (RBL) methodologies.
 ## Research Papers References
 
 ## About TourMate
-
+Mục tiêu cốt lõi Giúp người dùng trải nghiệm ảo các hoạt động bên trong khu du lịch trước khi quyết định có nên đến hay không, đồng thời chuẩn bị đầy đủ thông tin thực tế và cá nhân hóa gợi ý theo từng người.
 ### Target Users
 
 - **Khách du lịch (Tourist)**: Người tham gia tour hoặc tự đi, muốn khám phá địa điểm đầy đủ, không bị lạc, và hiểu sâu hơn về nơi mình đến.
@@ -43,89 +43,27 @@ This project focuses on Requirements-Based Learning (RBL) methodologies.
 
 ### 4 Module chính
 
-#### Module 1 — Dữ liệu khu du lịch
 
-Đây là nền tảng của toàn bộ hệ thống. App xây dựng và duy trì một cơ sở dữ liệu chi tiết về các khu du lịch, bao gồm:
 
-- Danh sách từng địa điểm trong khu: tên, tọa độ GPS, mô tả ngắn, mô tả chi tiết, giờ hoạt động, ảnh thực tế, câu chuyện lịch sử và văn hóa đặc trưng.
-- Bố cục tổng thể của khu: các khu vực, lối đi, điểm tập hợp, lối thoát hiểm.
-- Lộ trình mẫu chia theo thời gian: 2 tiếng, nửa ngày, cả ngày.
-- Nội dung kiến thức dạng bài đọc ngắn tại từng điểm — được viết dễ hiểu, phù hợp cho mọi lứa tuổi.
+#### Cơ chế chính 
 
-Dữ liệu được đóng góp từ ba nguồn: admin hệ thống, hướng dẫn viên đã được xác minh, và cộng đồng người dùng (có kiểm duyệt). Nguồn ban đầu có thể kéo từ Google Places API, Wikipedia tiếng Việt, và hợp tác trực tiếp với ban quản lý khu du lịch.
+Trải nghiệm ảo Người dùng di chuyển trong khu → đến gần điểm nổi bật → bấm "Tham gia" → xem video trải nghiệm góc nhìn thứ nhất (POV) của hoạt động đó → bấm Thích hoặc Bỏ qua → hệ thống tổng hợp sở thích và gợi ý khu phù hợp nhất.
+________________________________________
+#### Cơ chế Quiz gợi ý địa điểm 
 
-#### Module 2 — Pre-trip Game Experience (Trải nghiệm ảo trước chuyến đi)
+Trước khi vào trải nghiệm ảo, người dùng trả lời một chuỗi câu hỏi ngắn: thích mạo hiểm hay thư giãn, đi một mình hay gia đình có trẻ em, ngân sách dự kiến bao nhiêu, sức khỏe thế nào, muốn đi bao lâu. Dựa trên kết quả quiz, hệ thống xếp hạng các khu du lịch phù hợp và ưu tiên hiển thị những khu đó lên đầu.
+________________________________________
+#### Cơ chế AI gợi ý thông minh 
+AI phân tích đồng thời ba yếu tố: vị trí hiện tại của người dùng, thời tiết thực tế và dự báo tại khu du lịch trong ngày dự định đi, tình trạng sức khỏe và thể trạng đã khai báo. Từ đó đưa ra gợi ý cụ thể như "Hôm nay Bà Nà Hills có mưa buổi chiều, phù hợp đi Fantasy Park trong nhà hơn là Cầu Vàng ngoài trời" hoặc "Cách bạn 45 phút, phù hợp đi về trong ngày không cần nghỉ đêm."
+________________________________________
+#### Cơ chế dữ liệu thực tế
 
-Đây là tính năng phân biệt TourMate với mọi app du lịch khác hiện tại.
 
-##### Cơ chế hoạt động
+Thanh thể lực: mỗi hoạt động tiêu tốn thể lực dựa trên cường độ và thời gian. Người dùng nhập thể trạng, có trẻ em hoặc người lớn tuổi không → hệ thống tính được chơi bao nhiêu trò trong một ngày và gợi ý thứ tự hợp lý.
+Giá vé và ưu đãi: tự động cào giá từ trang chính chủ của từng khu theo lịch định kỳ để luôn hiển thị giá mới nhất. Khi người dùng quyết định đi, nút "Mua vé" trỏ thẳng tới trang bán vé chính thức, không qua trung gian.
+Lọc theo giá và sở thích: lọc theo khoảng giá vé, loại hình (thiên nhiên, giải trí, văn hóa, nghỉ dưỡng), khoảng cách từ vị trí hiện tại, phù hợp với đối tượng (gia đình, cặp đôi, nhóm bạn, solo).
+Nội quy và lưu ý an toàn: mỗi hoạt động đính kèm giới hạn chiều cao, cân nặng, độ tuổi, cảnh báo nguy hiểm. Hiển thị trước khi xem video.
+Lịch sử và di sản: với điểm văn hóa như nhà cổ, chùa, làng nghề — cung cấp nội dung ngắn về lịch sử, ý nghĩa, điều thú vị ít người biết.
+Vật dụng cần mang — kết hợp hoạt động và thời tiết: danh sách vật dụng được tổng hợp từ hai nguồn đồng thời. Nguồn một là các hoạt động người dùng đã chọn Thích (ví dụ tàu lượn → giày buộc chắc, không đội mũ rộng vành). Nguồn hai là thời tiết thực tế ngày dự định đi (ví dụ trời mưa → thêm áo mưa, giày chống trơn; trời nắng nóng → thêm kem chống nắng, nước uống nhiều hơn; trời lạnh trên núi → thêm áo khoác dày, găng tay). Hai nguồn kết hợp lại mới ra danh sách cuối cùng, mỗi vật dụng đều có lý do cụ thể gắn với hoạt động hoặc thời tiết tương ứng.
+Thời tiết và thời điểm: tích hợp dữ liệu thời tiết theo mùa, cảnh báo mùa mưa hoặc đông khách, gợi ý khung giờ tốt nhất trong ngày cho từng điểm.
 
-Khu du lịch được tái hiện dưới dạng thế giới 2D top-down đơn giản — phong cách flat map hoặc pixel art nhẹ, ưu tiên nội dung hơn đồ họa. Khách điều khiển nhân vật di chuyển qua từng địa điểm, dừng lại để tương tác và khám phá.
-Khi nhân vật đến một địa điểm, app hiển thị ảnh thực tế, mô tả ngắn, và 1-2 câu hỏi kiến thức nhỏ. Trả lời đúng thì mở khóa huy hiệu "đã biết trước" cho địa điểm đó. Toàn bộ nội dung game được kéo thẳng từ database khu du lịch — không cần tạo nội dung riêng.
-
-##### Hệ thống trạng thái địa điểm
-
-Mỗi địa điểm có ba trạng thái theo vòng đời trải nghiệm: Chưa khám phá → Đã thấy trong game → Đã đến thật. Khi khách đi tour thực tế và check-in tại chỗ, trạng thái được nâng cấp lên. Điều này tạo ra một vòng lặp cảm xúc rõ ràng: thấy ảo trước, đến thật sau, cảm giác quen thuộc ngay từ bước đầu đặt chân vào khu.
-
-##### Gợi ý lịch trình thông minh
-
-Sau khi chơi game, app phân tích hành vi: khách dừng lại lâu ở đâu, tương tác nhiều với loại địa điểm nào, bỏ qua loại nào. Từ đó tự động gợi ý lịch trình thực tế phù hợp với sở thích cá nhân.
-
-##### Chơi cùng nhau trước khi đi
-
-Cả đoàn có thể vào cùng một "phòng game" trước chuyến đi — cùng khám phá ảo, cùng trả lời câu hỏi, tạo không khí hào hứng và gắn kết trước khi gặp nhau ngoài thực tế.
-
-#### Module 3 — Quản lý tour thực tế (Guide Dashboard)
-
-##### Tạo và quản lý tour
-
-Guide tạo tour mới trong vài bước: chọn khu du lịch, đặt tên tour, chọn lịch trình, tạo mã QR để khách tham gia. Khách quét mã là tự động vào đoàn, không cần thêm bước nào.
-
-##### Theo dõi đoàn theo thời gian thực
-
-Guide thấy được vị trí của từng thành viên trên bản đồ khu du lịch đã tải sẵn. Trạng thái online/offline của từng người hiển thị rõ ràng. Nếu một thành viên tách khỏi đoàn quá xa hoặc mất kết nối P2P quá lâu, app lập tức cảnh báo guide.
-
-##### Check-in địa điểm
-
-Khi đoàn đến một điểm, guide hoặc từng khách tự check-in bằng GPS hoặc quét QR đặt tại chỗ. Địa điểm được đánh dấu "đã đến" trong lịch trình, kèm thời gian và ghi chú tùy chọn. Cuối tour, toàn bộ hành trình được lưu lại dưới dạng tổng kết có thể xem lại và chia sẻ.
-
-##### Chat nội bộ nhóm
-
-Tin nhắn văn bản trong đoàn truyền qua P2P — không cần internet, hoạt động ngay cả ở vùng không có sóng.
-
-#### Module 4 — Kết nối P2P (Không cần WiFi)
-
-Đây là xương sống kỹ thuật giúp TourMate hoạt động được ở những nơi đẹp nhất — hang động, rừng quốc gia, đảo xa, vùng núi cao — đúng những nơi mà sóng điện thoại thường không có.
-
-##### Cơ chế kết nối
-
-Bluetooth Mesh là phương thức chính. Các thiết bị trong đoàn tự kết nối với nhau tạo thành mạng lưới nhỏ. Dữ liệu vị trí và tin nhắn được truyền từ máy này sang máy kia theo chuỗi — máy ở đầu đoàn vẫn nhận được thông tin từ máy ở cuối đoàn thông qua các máy ở giữa làm cầu nối. Phạm vi thực tế của Bluetooth mỗi thiết bị khoảng 30-50m, nhưng với mesh 10 người dàn trải, tầm phủ thực tế có thể lên đến 200-300m.
-WiFi Direct là phương thức bổ sung khi cần phạm vi rộng hơn hoặc truyền dữ liệu lớn hơn như ảnh check-in.
-
-##### Offline-first
-
-Toàn bộ dữ liệu khu du lịch được tải xuống thiết bị trước khi khởi hành. Mọi thao tác trong hành trình — check-in, chat, vị trí, ghi chú — đều lưu local trước. Khi có mạng trở lại, app tự đồng bộ lên server, không mất bất kỳ dữ liệu nào.
-
-##### Lưu ý kỹ thuật
-
-Trên Android dùng BLE (Bluetooth Low Energy) hoặc thư viện Bridgefy. Trên iOS dùng MultipeerConnectivity framework vì Apple hạn chế WiFi Direct trực tiếp. Đây là phần phức tạp nhất về kỹ thuật và cần được prototype sớm để đánh giá giới hạn thực tế.
-
-#### Module 5 — Tự trở thành hướng dẫn viên (Self-Guide Mode)
-
-Bất kỳ người dùng nào cũng có thể kích hoạt chế độ này mà không cần đăng ký làm guide chuyên nghiệp.
-Khách tự tạo lịch trình cá nhân từ danh sách địa điểm trong khu. App cung cấp toàn bộ kiến thức — lịch sử, văn hóa, mẹo tham quan, câu chuyện thú vị — đủ để tự dẫn mình và người thân đi một cách tự tin. Tự check-in từng nơi, nhận huy hiệu hoàn thành lộ trình. Lịch trình cá nhân sau khi hoàn thành có thể lưu lại và chia sẻ cho người khác dùng lại — dần dần xây dựng một kho lịch trình do cộng đồng đóng góp.
-
-#### Module 6 — Đăng ký Hướng dẫn viên chuyên nghiệp
-
-Guide đăng ký tài khoản, khai báo khu du lịch phụ trách, và được xác minh qua quy trình duyệt của admin hoặc đánh giá từ cộng đồng. Sau khi được duyệt, guide có thể đóng góp nội dung vào database: thêm địa điểm, viết mô tả chi tiết hơn, bổ sung câu chuyện địa phương độc quyền, thêm câu hỏi quiz cho game. Hồ sơ guide hiển thị công khai: kinh nghiệm, ngôn ngữ dẫn tour, đánh giá từ khách đã đi. Khách có thể tìm kiếm và liên hệ guide phù hợp trực tiếp trong app.
-
-### Vòng đời trải nghiệm hoàn chỉnh
-
-Trước chuyến đi, khách nhận mã tour từ guide, vào chế độ game khám phá ảo khu du lịch tại nhà, cùng cả đoàn chơi chung để tạo không khí, và nhận gợi ý lịch trình cá nhân hóa dựa trên sở thích game.
-Ngày khởi hành, mọi người mở app và tự động kết nối P2P với nhau qua Bluetooth — không cần WiFi, không cần thao tác thêm. Toàn bộ dữ liệu khu đã có sẵn offline trong máy.
-Trong hành trình, guide theo dõi đoàn trên bản đồ offline, nhận cảnh báo ngay nếu ai tách xa, chat nhóm qua P2P. Mỗi khi đến một địa điểm đã "thấy trong game", khách check-in để nâng cấp trạng thái lên "đã đến thật" — cảm giác hoàn thành rõ rệt.
-Kết thúc tour, app tổng kết toàn bộ hành trình: số địa điểm đã đến, điểm kiến thức, huy hiệu, bản đồ hành trình. Khi có mạng, dữ liệu đồng bộ lên cloud. Khách có thể chia sẻ hành trình của mình.
-
-### Rủi ro và thách thức chính
-
-Kỹ thuật P2P là phần khó nhất — cần prototype sớm để kiểm tra giới hạn thực tế của Bluetooth mesh trên các thiết bị đa dạng. Chất lượng dữ liệu khu du lịch quyết định giá trị của toàn bộ app — cần đầu tư nghiêm túc vào việc thu thập và kiểm duyệt nội dung ngay từ đầu. Game mechanics cần đủ hấp dẫn để khách thực sự chơi trước khi đi, không chỉ là một tính năng thêm vào cho có.
