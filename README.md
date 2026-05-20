@@ -29,41 +29,74 @@ Front-end source code:
 
 ## Requirements-Based Learning (RBL) Focus
 
-This project focuses on Requirements-Based Learning (RBL) methodologies.
-
-## Research Papers References
+- Nghiên cứu sâu ý tưởng "Xây dựng bản đồ du lịch ảo (build map) tích hợp dữ liệu cá nhân".
+- Lý do chọn: Bản đồ tương tác là ngách khả thi và có giá trị thực tế cao, giúp TourMate khác biệt khi trình bày trải nghiệm du lịch theo không gian.
+- Hướng nghiên cứu: tập trung vào cách thiết kế, hiển thị và tối ưu hoá bản đồ khu du lịch; kết hợp data vị trí, điểm tham quan, thời tiết và sở thích để tăng tính cá nhân hoá.
+- Kết quả kỳ vọng: một giải pháp build map rõ ràng với mô hình đánh giá và đề xuất điểm tham quan dựa trên bản đồ, giúp người dùng thấy ngay nơi phù hợp và tránh chọn sai địa điểm.
 
 ## About TourMate
-Mục tiêu cốt lõi Giúp người dùng trải nghiệm ảo các hoạt động bên trong khu du lịch trước khi quyết định có nên đến hay không, đồng thời chuẩn bị đầy đủ thông tin thực tế và cá nhân hóa gợi ý theo từng người.
-### Target Users
 
-- **Khách du lịch (Tourist)**: Người tham gia tour hoặc tự đi, muốn khám phá địa điểm đầy đủ, không bị lạc, và hiểu sâu hơn về nơi mình đến.
-- **Hướng dẫn viên chuyên nghiệp (Guide)**: Người tổ chức và dẫn tour, cần quản lý đoàn, theo dõi vị trí thành viên, và đảm bảo không ai bị bỏ lại.
-- **Khách tự hướng dẫn (Self-Guide)**: Người muốn tự khám phá mà không cần guide, dựa hoàn toàn vào kiến thức và công cụ có sẵn trong app.
+TourMate là nền tảng giúp người dùng trải nghiệm ảo các khu du lịch trước khi quyết định có nên đến hay không. Thay vì chỉ xem ảnh tĩnh hay đọc review, người dùng có thể khám phá bản đồ khu du lịch, xem video POV từng hoạt động, nhận gợi ý cá nhân hóa theo sở thích, thể trạng, thời tiết và ngân sách.
+Điểm khác biệt cốt lõi so với các app du lịch hiện tại: TourMate không chỉ cho biết khu đó có gì, mà giúp người dùng biết khu đó có hợp với mình không trước khi đặt vé.
 
-### 4 Module chính
+### Mục tiêu
 
+- Giúp người dùng khám phá trực quan khu du lịch bằng bản đồ, video POV và nội dung tương tác.
+- Dự đoán mức độ phù hợp của mỗi địa điểm dựa trên sở thích cá nhân, thể trạng, thời tiết và ngân sách.
+- Tránh việc chọn sai hành trình bằng cách cung cấp gợi ý du lịch cá nhân hoá trước khi đặt vé.
 
+### Điểm khác biệt chính
 
-#### Cơ chế chính 
+- Không chỉ cung cấp thông tin: TourMate có khả năng đánh giá mức độ phù hợp cho từng người dùng.
+- Kết nối dữ liệu thực tế: thời tiết, sức khỏe, sở thích và điều kiện di chuyển được dùng làm đầu vào cho hệ thống gợi ý.
+- Thắng-thua nhờ trải nghiệm ảo: người dùng có thể xem trước hoạt động dưới dạng video và ảnh 360/POV.
 
-Trải nghiệm ảo Người dùng di chuyển trong khu → đến gần điểm nổi bật → bấm "Tham gia" → xem video trải nghiệm góc nhìn thứ nhất (POV) của hoạt động đó → bấm Thích hoặc Bỏ qua → hệ thống tổng hợp sở thích và gợi ý khu phù hợp nhất.
-________________________________________
-#### Cơ chế Quiz gợi ý địa điểm 
+### Các tính năng chính
 
-Trước khi vào trải nghiệm ảo, người dùng trả lời một chuỗi câu hỏi ngắn: thích mạo hiểm hay thư giãn, đi một mình hay gia đình có trẻ em, ngân sách dự kiến bao nhiêu, sức khỏe thế nào, muốn đi bao lâu. Dựa trên kết quả quiz, hệ thống xếp hạng các khu du lịch phù hợp và ưu tiên hiển thị những khu đó lên đầu.
-________________________________________
-#### Cơ chế AI gợi ý thông minh 
-AI phân tích đồng thời ba yếu tố: vị trí hiện tại của người dùng, thời tiết thực tế và dự báo tại khu du lịch trong ngày dự định đi, tình trạng sức khỏe và thể trạng đã khai báo. Từ đó đưa ra gợi ý cụ thể như "Hôm nay Bà Nà Hills có mưa buổi chiều, phù hợp đi Fantasy Park trong nhà hơn là Cầu Vàng ngoài trời" hoặc "Cách bạn 45 phút, phù hợp đi về trong ngày không cần nghỉ đêm."
-________________________________________
-#### Cơ chế dữ liệu thực tế
+1. Quiz sở thích
+   - Người dùng trả lời chuỗi câu hỏi ngắn: thích mạo hiểm hay thư giãn, đi một mình hay gia đình có trẻ em, ngân sách dự kiến, sức khỏe, thời gian dự định.
+   - Hệ thống xếp hạng và ưu tiên hiển thị các khu du lịch phù hợp.
 
+2. Bản đồ khu du lịch
+   - Hiển thị bản đồ 2D dạng SVG hoặc ảnh tương tác của từng khu.
+   - Người dùng click vào từng điểm để xem ảnh, video và thông tin chi tiết.
+   - Nơi có Street View công khai sẽ nhúng Google Maps hoặc Mapillary API; nơi chưa có dùng ảnh tĩnh và video embed.
 
-Thanh thể lực: mỗi hoạt động tiêu tốn thể lực dựa trên cường độ và thời gian. Người dùng nhập thể trạng, có trẻ em hoặc người lớn tuổi không → hệ thống tính được chơi bao nhiêu trò trong một ngày và gợi ý thứ tự hợp lý.
-Giá vé và ưu đãi: tự động cào giá từ trang chính chủ của từng khu theo lịch định kỳ để luôn hiển thị giá mới nhất. Khi người dùng quyết định đi, nút "Mua vé" trỏ thẳng tới trang bán vé chính thức, không qua trung gian.
-Lọc theo giá và sở thích: lọc theo khoảng giá vé, loại hình (thiên nhiên, giải trí, văn hóa, nghỉ dưỡng), khoảng cách từ vị trí hiện tại, phù hợp với đối tượng (gia đình, cặp đôi, nhóm bạn, solo).
-Nội quy và lưu ý an toàn: mỗi hoạt động đính kèm giới hạn chiều cao, cân nặng, độ tuổi, cảnh báo nguy hiểm. Hiển thị trước khi xem video.
-Lịch sử và di sản: với điểm văn hóa như nhà cổ, chùa, làng nghề — cung cấp nội dung ngắn về lịch sử, ý nghĩa, điều thú vị ít người biết.
-Vật dụng cần mang — kết hợp hoạt động và thời tiết: danh sách vật dụng được tổng hợp từ hai nguồn đồng thời. Nguồn một là các hoạt động người dùng đã chọn Thích (ví dụ tàu lượn → giày buộc chắc, không đội mũ rộng vành). Nguồn hai là thời tiết thực tế ngày dự định đi (ví dụ trời mưa → thêm áo mưa, giày chống trơn; trời nắng nóng → thêm kem chống nắng, nước uống nhiều hơn; trời lạnh trên núi → thêm áo khoác dày, găng tay). Hai nguồn kết hợp lại mới ra danh sách cuối cùng, mỗi vật dụng đều có lý do cụ thể gắn với hoạt động hoặc thời tiết tương ứng.
-Thời tiết và thời điểm: tích hợp dữ liệu thời tiết theo mùa, cảnh báo mùa mưa hoặc đông khách, gợi ý khung giờ tốt nhất trong ngày cho từng điểm.
+3. Video POV
+   - Mỗi hoạt động có 3-5 video dự phòng từ YouTube, TikTok, Facebook.
+   - Hệ thống tự động kiểm tra trạng thái video hàng tuần và chuyển sang nguồn backup khi cần.
 
+4. AI gợi ý thông minh
+   - Kết hợp vị trí hiện tại, thời tiết thực tế và dự báo, sức khỏe và thể trạng đã khai báo.
+   - Đưa ra đề xuất cụ thể cho hoạt động phù hợp, ví dụ: "Hôm nay Bà Nà Hills có mưa buổi chiều, phù hợp đi Fantasy Park trong nhà hơn là Cầu Vàng ngoài trời."
+
+5. Thanh thể lực
+   - Mỗi hoạt động gắn cường độ và thời gian tiêu hao.
+   - Hệ thống tính toán số hoạt động phù hợp trong ngày và gợi ý thứ tự trải nghiệm.
+
+6. Giá vé và ưu đãi
+   - Nhập dữ liệu ban đầu bằng thủ công, sau đó cập nhật định kỳ.
+   - Nút mua vé dẫn thẳng tới trang chính thức, không qua trung gian.
+
+7. Nội quy và an toàn
+   - Mỗi hoạt động đính kèm giới hạn chiều cao, cân nặng, độ tuổi và cảnh báo nguy hiểm.
+   - Hiển thị thông tin an toàn trước khi người dùng xem video.
+
+8. Danh sách vật dụng thông minh
+   - Tổng hợp dựa trên hoạt động người dùng chọn và dự báo thời tiết ngày đi.
+   - Mỗi vật dụng đi kèm lý do cụ thể theo hoạt động hoặc điều kiện thời tiết.
+
+### Chiến lược nội dung theo giai đoạn
+
+- Lớp 1: Dùng dữ liệu công khai, Google Maps Street View API và Mapillary API, ảnh Photosphere, video embed từ nguồn miễn phí.
+- Lớp 2: Hợp tác với vlogger và khu du lịch để lấy nội dung chất lượng cao, tích hợp YouTube Data API và TikTok API.
+- Lớp 3: Phát triển marketplace video, cho phép upload nội dung trả phí, và mở rộng virtual tour 3D.
+
+### Chiến lược Street View
+
+Không tự xây Street View hoàn chỉnh vì quá tốn kém và không thể cạnh tranh về chất lượng với Google. Thay vào đó chia thành 3 trường hợp.
+
+- Trường hợp 1: Nơi có Street View công khai, nhúng Google Maps Embed API hoặc Mapillary API.
+- Trường hợp 2: Nơi có Photosphere do cộng đồng đóng góp, dùng làm điểm 360 tĩnh.
+- Trường hợp 3: Nơi thiếu dữ liệu, dùng bản đồ 2D + ảnh tĩnh + video làm fallback.
+- Navigation kiểu GeoGuessr chỉ thực hiện khi đã có partnership và đủ ảnh 360 liên tục.
