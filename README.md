@@ -1,6 +1,6 @@
-# TOURMATE - SWD392 Group 5 - Sum26
+# JAEN - SWD392 Group 5 - Sum26
 
-TourMate là nền tảng du lịch thông minh kết hợp trải nghiệm ảo trước chuyến đi dưới dạng game, quản lý tour thực tế theo thời gian thực, và kết nối P2P không cần internet. Mục tiêu là xóa bỏ ranh giới giữa chuẩn bị — trải nghiệm — và kỷ niệm trong một hành trình du lịch hoàn chỉnh.
+JAEN là nền tảng học ngôn ngữ trực tuyến thông minh (Smart Language Learning Platform), hoạt động theo mô hình mở cho phép kết nối giữa người học và người sáng tạo nội dung. Hệ thống không chỉ cung cấp các bài học video tĩnh mà còn tích hợp các module tương tác đa dạng (Flashcards, Quizzes, Reading, Listening) , các bài kiểm tra nói/viết đánh giá tự động bằng AI Assessment cùng hệ thống quản lý tiến độ và từ điển cá nhân hóa.
 
 ## Group 5 - Team Members
 
@@ -28,75 +28,73 @@ Back-end source code:
 Front-end source code:
 
 ## Requirements-Based Learning (RBL) Focus
+- Nghiên cứu sâu ý tưởng: "Xây dựng hệ thống tự động đánh giá và chấm điểm năng lực ngôn ngữ (Nói và Viết) tích hợp AI Assessment"
+- Lý do chọn: Việc chấm điểm kỹ năng Nói (Speaking) và Viết (Writing) theo cách truyền thống tốn rất nhiều thời gian và chi phí. Việc ứng dụng AI giúp tạo ra ngách đi đột phá cho JAEN so với các app học tập thông thường, cung cấp phản hồi tức thì cho người học.
+- Hướng nghiên cứu: Tập trung vào tối ưu hóa Prompt, xử lý bất đồng bộ kết quả trả về từ mô hình AI, cấu hình hạn mức sử dụng (Quota) cho mỗi tài khoản để tối ưu chi phí hệ thống
+- Kết quả kỳ vọng: Đưa ra giải pháp kiến trúc tích hợp AI có khả năng chấm điểm, giải thích chi tiết lỗi sai và phân tích ngữ pháp trong vòng dưới 5 phút, đảm bảo độ ổn định cao.
 
-- Nghiên cứu sâu ý tưởng "Xây dựng bản đồ du lịch ảo (build map) tích hợp dữ liệu cá nhân".
-- Lý do chọn: Bản đồ tương tác là ngách khả thi và có giá trị thực tế cao, giúp TourMate khác biệt khi trình bày trải nghiệm du lịch theo không gian.
-- Hướng nghiên cứu: tập trung vào cách thiết kế, hiển thị và tối ưu hoá bản đồ khu du lịch; kết hợp data vị trí, điểm tham quan, thời tiết và sở thích để tăng tính cá nhân hoá.
-- Kết quả kỳ vọng: một giải pháp build map rõ ràng với mô hình đánh giá và đề xuất điểm tham quan dựa trên bản đồ, giúp người dùng thấy ngay nơi phù hợp và tránh chọn sai địa điểm.
+## About JAEN
 
-## About TourMate
-
-TourMate là nền tảng giúp người dùng trải nghiệm ảo các khu du lịch trước khi quyết định có nên đến hay không. Thay vì chỉ xem ảnh tĩnh hay đọc review, người dùng có thể khám phá bản đồ khu du lịch, xem video POV từng hoạt động, nhận gợi ý cá nhân hóa theo sở thích, thể trạng, thời tiết và ngân sách.
-Điểm khác biệt cốt lõi so với các app du lịch hiện tại: TourMate không chỉ cho biết khu đó có gì, mà giúp người dùng biết khu đó có hợp với mình không trước khi đặt vé.
+JAEN là nền tảng giúp người dùng tiếp cận và học tập các khóa học ngôn ngữ trực tuyến thông qua kho học liệu đa dạng. Thay vì chỉ học lý thuyết tĩnh, người dùng có thể làm bài tập trắc nghiệm, luyện ghi nhớ qua thẻ từ vựng và tham gia các bài test năng lực toàn diện. 
+Điểm khác biệt cốt lõi so với các app học ngôn ngữ hiện tại: JAEN không chỉ cung cấp tài liệu học, mà còn tích hợp Trí tuệ nhân tạo (AI) chấm điểm chi tiết bài Nói và bài Viết như một trợ lý cá nhân thực thụ trước khi người học tham dự các kỳ thi chứng chỉ
 
 ### Mục tiêu
 
-- Giúp người dùng khám phá trực quan khu du lịch bằng bản đồ, video POV và nội dung tương tác.
-- Dự đoán mức độ phù hợp của mỗi địa điểm dựa trên sở thích cá nhân, thể trạng, thời tiết và ngân sách.
-- Tránh việc chọn sai hành trình bằng cách cung cấp gợi ý du lịch cá nhân hoá trước khi đặt vé.
+- Giúp người dùng khám phá trực quan kho khóa học bằng bộ lọc thông minh, bài giảng video và tài liệu tương tác
+- Đánh giá chi tiết mức độ chính xác của kỹ năng Nói/Viết dựa trên công nghệ chấm điểm AI thông minh.
+- Tối ưu hóa ngân sách và lộ trình học cá nhân hóa bằng cách cho phép xem trước thông tin khóa học và học thử tài liệu miễn phí trước khi quyết định nâng cấp.
 
 ### Điểm khác biệt chính
 
-- Không chỉ cung cấp thông tin: TourMate có khả năng đánh giá mức độ phù hợp cho từng người dùng.
-- Kết nối dữ liệu thực tế: thời tiết, sức khỏe, sở thích và điều kiện di chuyển được dùng làm đầu vào cho hệ thống gợi ý.
-- Thắng-thua nhờ trải nghiệm ảo: người dùng có thể xem trước hoạt động dưới dạng video và ảnh 360/POV.
+- Không chỉ cung cấp thông tin: JAEN có khả năng tự động chấm điểm và đưa ra giải thích chi tiết cho từng câu hỏi bằng AI.
+- Kết nối dữ liệu thực tế: Trạng thái tiến độ học tập, lịch sử lưu từ vựng và kết quả quiz được sử dụng làm đầu vào để tối ưu hóa lộ trình cá nhân.
+- Trải nghiệm tương tác đa chiều: Người học có thể ôn tập từ vựng bằng bộ Flashcard sinh động và theo dõi video bài giảng tích hợp mượt mà.
 
 ### Các tính năng chính
 
-1. Quiz sở thích
-   - Người dùng trả lời chuỗi câu hỏi ngắn: thích mạo hiểm hay thư giãn, đi một mình hay gia đình có trẻ em, ngân sách dự kiến, sức khỏe, thời gian dự định.
-   - Hệ thống xếp hạng và ưu tiên hiển thị các khu du lịch phù hợp.
+1. Bộ lọc & Tìm kiếm Khóa học (Search & Filter)
+   - Người dùng tìm kiếm theo từ khóa, danh mục khóa học hoặc phân loại theo thẻ: Miễn phí (Free), Trả phí (Paid), Phổ biến, hay Mới nhất.
+   - Hệ thống xếp hạng và hiển thị ưu tiên các khóa học được đánh giá cao từ cộng đồng.
 
-2. Bản đồ khu du lịch
-   - Hiển thị bản đồ 2D dạng SVG hoặc ảnh tương tác của từng khu.
-   - Người dùng click vào từng điểm để xem ảnh, video và thông tin chi tiết.
-   - Nơi có Street View công khai sẽ nhúng Google Maps hoặc Mapillary API; nơi chưa có dùng ảnh tĩnh và video embed.
+2. Quản lý Tiến độ Học tập (Progress Tracking)
+   - Hiển thị biểu đồ tiến trình dưới dạng tỷ lệ % hoàn thành bài học trực quan.
+   - Người dùng click vào từng bài học để xem trạng thái hoàn thành các module quiz hoặc video bài giảng liên quan.
 
-3. Video POV
-   - Mỗi hoạt động có 3-5 video dự phòng từ YouTube, TikTok, Facebook.
-   - Hệ thống tự động kiểm tra trạng thái video hàng tuần và chuyển sang nguồn backup khi cần.
+3. Video bài giảng (Embedded Video Lectures)
+   - Mỗi bài học tích hợp video bài giảng được Creator lưu trữ trên YouTube dưới chế độ không công khai (Unlisted) để bảo mật.
+   - Hệ thống nhúng trình phát nội dung trực tuyến ổn định nhờ API kết nối bên ngoài.
+     
+4. AI chấm điểm thông minh (AI Assessment)
+   - Kết hợp dữ liệu đầu vào là file ghi âm bài Nói (Speaking) hoặc đoạn văn bài Viết (Writing) do Learner tải lên.
+   - Đưa ra đề xuất sửa lỗi cụ thể trong vòng dưới 5 phút, ví dụ: "Phát âm từ này chưa chuẩn trọng âm" hoặc "Cấu trúc câu này lỗi ngữ pháp, nên sửa thành...".
 
-4. AI gợi ý thông minh
-   - Kết hợp vị trí hiện tại, thời tiết thực tế và dự báo, sức khỏe và thể trạng đã khai báo.
-   - Đưa ra đề xuất cụ thể cho hoạt động phù hợp, ví dụ: "Hôm nay Bà Nà Hills có mưa buổi chiều, phù hợp đi Fantasy Park trong nhà hơn là Cầu Vàng ngoài trời."
+5. Từ điển cá nhân (Personal Dictionary)
+   - Mỗi từ vựng được tra cứu khi bôi đen trực tiếp trên tài liệu PDF có thể lưu lại vào bộ nhớ riêng.
+   - Hệ thống tự động đồng bộ và gợi ý ôn tập lại từ mới thông qua các bài tập hàng ngày.
+     
+6. Hệ thống Thanh toán Bảo mật (Secure Payments)
+   - Tích hợp cổng thanh toán trực tiếp qua PayPal và VNPAY, đảm bảo giao dịch nhanh chóng và an toàn.
+   - Áp dụng quy tắc giá trị thanh toán tối thiểu từ 75,000 VND.
+     
+7. Kiểm duyệt & Báo cáo Vi phạm (Moderation & Report)
+   - Mỗi khóa học hoặc nội dung đính kèm đều có nút Báo cáo vi phạm (Report) dành cho người học khi phát hiện bản quyền sai lệch.
+   - Tự động ẩn nội dung hoặc cảnh báo an toàn cho Admin xử lý khi vượt quá ngưỡng quy định.
 
-5. Thanh thể lực
-   - Mỗi hoạt động gắn cường độ và thời gian tiêu hao.
-   - Hệ thống tính toán số hoạt động phù hợp trong ngày và gợi ý thứ tự trải nghiệm.
-
-6. Giá vé và ưu đãi
-   - Nhập dữ liệu ban đầu bằng thủ công, sau đó cập nhật định kỳ.
-   - Nút mua vé dẫn thẳng tới trang chính thức, không qua trung gian.
-
-7. Nội quy và an toàn
-   - Mỗi hoạt động đính kèm giới hạn chiều cao, cân nặng, độ tuổi và cảnh báo nguy hiểm.
-   - Hiển thị thông tin an toàn trước khi người dùng xem video.
-
-8. Danh sách vật dụng thông minh
-   - Tổng hợp dựa trên hoạt động người dùng chọn và dự báo thời tiết ngày đi.
-   - Mỗi vật dụng đi kèm lý do cụ thể theo hoạt động hoặc điều kiện thời tiết.
+8. Bộ công cụ Tạo bài tập tương tác (Course Creation Modules)
+   - Hỗ trợ Creator tạo học liệu phong phú dựa trên 10 loại module nội dung khác nhau.
+   - Bao gồm: Tạo thẻ ghi nhớ (Flashcard), Trắc nghiệm nhiều lựa chọn (Multiple Choice Quiz), và Điền vào chỗ trống (Gap-Fill).
 
 ### Chiến lược nội dung theo giai đoạn
 
-- Lớp 1: Dùng dữ liệu công khai, Google Maps Street View API và Mapillary API, ảnh Photosphere, video embed từ nguồn miễn phí.
-- Lớp 2: Hợp tác với vlogger và khu du lịch để lấy nội dung chất lượng cao, tích hợp YouTube Data API và TikTok API.
-- Lớp 3: Phát triển marketplace video, cho phép upload nội dung trả phí, và mở rộng virtual tour 3D.
+- Lớp 1: Dùng dữ liệu bài giảng công khai, nhúng link video YouTube Unlisted, cung cấp tài liệu dạng PDF trực tuyến và các bài tập Quiz trắc nghiệm cơ bản.
+- Lớp 2: Hợp tác với các Creator có chứng chỉ chuyên môn cao để xuất bản khóa học chất lượng, tích hợp chấm điểm tự động Nói/Viết bằng AI nhằm tăng tính trải nghiệm
+- Lớp 3: Phát triển mô hình marketplace khóa học toàn diện, tối ưu hóa doanh thu chia sẻ tự động và mở rộng thêm các bài thi thử mô phỏng kỳ thi thực tế.
 
-### Chiến lược Street View
+### Chiến lược Quản lý Video & Bảo mật Học liệu
 
-Không tự xây Street View hoàn chỉnh vì quá tốn kém và không thể cạnh tranh về chất lượng với Google. Thay vào đó chia thành 3 trường hợp.
+Hệ thống không tự xây dựng máy chủ lưu trữ video hoàn chỉnh vì quá tốn kém và ảnh hưởng tốc độ băng thông. Thay vào đó chia thành 3 trường hợp:
 
-- Trường hợp 1: Nơi có Street View công khai, nhúng Google Maps Embed API hoặc Mapillary API.
-- Trường hợp 2: Nơi có Photosphere do cộng đồng đóng góp, dùng làm điểm 360 tĩnh.
-- Trường hợp 3: Nơi thiếu dữ liệu, dùng bản đồ 2D + ảnh tĩnh + video làm fallback.
-- Navigation kiểu GeoGuessr chỉ thực hiện khi đã có partnership và đủ ảnh 360 liên tục.
+- Trường hợp 1: Video bài giảng chính thức, Creator upload lên kênh YouTube cá nhân dưới dạng Unlisted, hệ thống nhúng qua mã ID bảo mật để phát trên nền tảng.
+- Trường hợp 2: Tài liệu học tập bằng văn bản, sử dụng định dạng PDF và kết xuất trực tiếp qua trình xem trực tuyến của hệ thống để Learner không cần tải về.
+- Trường hợp 3: Các bài tập tương tác và tài liệu bổ trợ, bắt buộc phải đi qua Authorization Middleware và hệ thống quét virus tự động trước khi hiển thị cho người học.
+
