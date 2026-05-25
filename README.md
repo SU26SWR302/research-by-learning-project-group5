@@ -33,7 +33,7 @@ Front-end source code:
 - Hướng nghiên cứu: Tập trung vào tối ưu hóa Prompt, xử lý bất đồng bộ kết quả trả về từ mô hình AI, cấu hình hạn mức sử dụng (Quota) cho mỗi tài khoản để tối ưu chi phí hệ thống
 - Kết quả kỳ vọng: Đưa ra giải pháp kiến trúc tích hợp AI có khả năng chấm điểm, giải thích chi tiết lỗi sai và phân tích ngữ pháp trong vòng dưới 5 phút, đảm bảo độ ổn định cao.
 
-## About TourMate
+## About JAEN
 
 JAEN là nền tảng giúp người dùng tiếp cận và học tập các khóa học ngôn ngữ trực tuyến thông qua kho học liệu đa dạng. Thay vì chỉ học lý thuyết tĩnh, người dùng có thể làm bài tập trắc nghiệm, luyện ghi nhớ qua thẻ từ vựng và tham gia các bài test năng lực toàn diện. 
 Điểm khác biệt cốt lõi so với các app học ngôn ngữ hiện tại: JAEN không chỉ cung cấp tài liệu học, mà còn tích hợp Trí tuệ nhân tạo (AI) chấm điểm chi tiết bài Nói và bài Viết như một trợ lý cá nhân thực thụ trước khi người học tham dự các kỳ thi chứng chỉ
