@@ -15,7 +15,7 @@ JAEN là nền tảng học ngôn ngữ trực tuyến thông minh (Smart Langua
 Jira project link: https://vaanthanh2005.atlassian.net/jira/software/projects/SCRUM/summary?atlOrigin=eyJpIjoiZDg4NjQ3NTNlZWMwNDg2Nzg2MTVhZmMxNjQ2ZjgwYTgiLCJwIjoiaiJ9
 
 ## Overleaf
-https://www.overleaf.com/project/6a2ba27a2ef1de8631f2d2c7
+https://www.overleaf.com/read/rdfyhdcmtfnm#0aeaa9
 
 ## Documentations - RDS
 
