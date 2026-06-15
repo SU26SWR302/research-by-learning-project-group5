@@ -15,22 +15,20 @@ JAEN là nền tảng học ngôn ngữ trực tuyến thông minh (Smart Langua
 Jira project link: https://vaanthanh2005.atlassian.net/jira/software/projects/SCRUM/summary?atlOrigin=eyJpIjoiZDg4NjQ3NTNlZWMwNDg2Nzg2MTVhZmMxNjQ2ZjgwYTgiLCJwIjoiaiJ9
 
 ## Overleaf
-https://www.overleaf.com/read/rdfyhdcmtfnm#0aeaa9
+
+LINK OVERLEAF EDIT : https://www.overleaf.com/4497129322htpwwdtqcgfx#3fb35e
+
+LINK OVERLEAF VIEW : https://www.overleaf.com/read/vtkgtzwpbhgp#2c21c0
+
+LINK ZOTERO GROUP : https://www.zotero.org/groups/6586964/jaen-swd392-group5/library
 
 ## Documentations - RDS
 
 Link RDS documentation:  
 https://docs.google.com/document/d/1TkzdZRSMXzru4KWArm73BzWpnXa4SvUaAgt468msgJk/edit?usp=sharing
 
-## Back-end Source Code
-
-Back-end source code:
-
-## Front-end Source Code
-
-Front-end source code:
-
 ## Requirements-Based Learning (RBL) Focus
+
 - Nghiên cứu sâu ý tưởng: "Xây dựng hệ thống tự động đánh giá và chấm điểm năng lực ngôn ngữ (Nói và Viết) tích hợp AI Assessment"
 - Lý do chọn: Việc chấm điểm kỹ năng Nói (Speaking) và Viết (Writing) theo cách truyền thống tốn rất nhiều thời gian và chi phí. Việc ứng dụng AI giúp tạo ra ngách đi đột phá cho JAEN so với các app học tập thông thường, cung cấp phản hồi tức thì cho người học.
 - Hướng nghiên cứu: Tập trung vào tối ưu hóa Prompt, xử lý bất đồng bộ kết quả trả về từ mô hình AI, cấu hình hạn mức sử dụng (Quota) cho mỗi tài khoản để tối ưu chi phí hệ thống
@@ -38,7 +36,7 @@ Front-end source code:
 
 ## About JAEN
 
-JAEN là nền tảng giúp người dùng tiếp cận và học tập các khóa học ngôn ngữ trực tuyến thông qua kho học liệu đa dạng. Thay vì chỉ học lý thuyết tĩnh, người dùng có thể làm bài tập trắc nghiệm, luyện ghi nhớ qua thẻ từ vựng và tham gia các bài test năng lực toàn diện. 
+JAEN là nền tảng giúp người dùng tiếp cận và học tập các khóa học ngôn ngữ trực tuyến thông qua kho học liệu đa dạng. Thay vì chỉ học lý thuyết tĩnh, người dùng có thể làm bài tập trắc nghiệm, luyện ghi nhớ qua thẻ từ vựng và tham gia các bài test năng lực toàn diện.
 Điểm khác biệt cốt lõi so với các app học ngôn ngữ hiện tại: JAEN không chỉ cung cấp tài liệu học, mà còn tích hợp Trí tuệ nhân tạo (AI) chấm điểm chi tiết bài Nói và bài Viết như một trợ lý cá nhân thực thụ trước khi người học tham dự các kỳ thi chứng chỉ
 
 ### Mục tiêu
@@ -66,7 +64,6 @@ JAEN là nền tảng giúp người dùng tiếp cận và học tập các kh�
 3. Video bài giảng (Embedded Video Lectures)
    - Mỗi bài học tích hợp video bài giảng được Creator lưu trữ trên YouTube dưới chế độ không công khai (Unlisted) để bảo mật.
    - Hệ thống nhúng trình phát nội dung trực tuyến ổn định nhờ API kết nối bên ngoài.
-     
 4. AI chấm điểm thông minh (AI Assessment)
    - Kết hợp dữ liệu đầu vào là file ghi âm bài Nói (Speaking) hoặc đoạn văn bài Viết (Writing) do Learner tải lên.
    - Đưa ra đề xuất sửa lỗi cụ thể trong vòng dưới 5 phút, ví dụ: "Phát âm từ này chưa chuẩn trọng âm" hoặc "Cấu trúc câu này lỗi ngữ pháp, nên sửa thành...".
@@ -74,11 +71,9 @@ JAEN là nền tảng giúp người dùng tiếp cận và học tập các kh�
 5. Từ điển cá nhân (Personal Dictionary)
    - Mỗi từ vựng được tra cứu khi bôi đen trực tiếp trên tài liệu PDF có thể lưu lại vào bộ nhớ riêng.
    - Hệ thống tự động đồng bộ và gợi ý ôn tập lại từ mới thông qua các bài tập hàng ngày.
-     
 6. Hệ thống Thanh toán Bảo mật (Secure Payments)
    - Tích hợp cổng thanh toán trực tiếp qua PayPal và VNPAY, đảm bảo giao dịch nhanh chóng và an toàn.
    - Áp dụng quy tắc giá trị thanh toán tối thiểu từ 75,000 VND.
-     
 7. Kiểm duyệt & Báo cáo Vi phạm (Moderation & Report)
    - Mỗi khóa học hoặc nội dung đính kèm đều có nút Báo cáo vi phạm (Report) dành cho người học khi phát hiện bản quyền sai lệch.
    - Tự động ẩn nội dung hoặc cảnh báo an toàn cho Admin xử lý khi vượt quá ngưỡng quy định.
@@ -100,4 +95,3 @@ Hệ thống không tự xây dựng máy chủ lưu trữ video hoàn chỉnh v
 - Trường hợp 1: Video bài giảng chính thức, Creator upload lên kênh YouTube cá nhân dưới dạng Unlisted, hệ thống nhúng qua mã ID bảo mật để phát trên nền tảng.
 - Trường hợp 2: Tài liệu học tập bằng văn bản, sử dụng định dạng PDF và kết xuất trực tiếp qua trình xem trực tuyến của hệ thống để Learner không cần tải về.
 - Trường hợp 3: Các bài tập tương tác và tài liệu bổ trợ, bắt buộc phải đi qua Authorization Middleware và hệ thống quét virus tự động trước khi hiển thị cho người học.
-
